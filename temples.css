@@ -1,0 +1,47 @@
+body{
+
+    font-family: 'Roboto', sans-serif;
+    background-color: antiquewhite;
+}
+header{
+    background: #004a7c;
+    color:antiquewhite;
+    padding: 10px;
+    display: flex;
+}
+nav a{
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 0.5rem;
+    justify-items: left;
+    position: relative;
+    left: 535%;
+    top: 35%;
+}
+.temple_album{
+    font-size: larger;
+    font-weight: bolder;
+}
+h1{
+    text-align: center;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   justify-items: auto;
+  gap: 40px;
+}
+section img{
+    max-width: 530px;
+    
+}
+figcaption{
+    text-align: center;
+}
+footer {
+  text-align: center;
+  background: #004a7c;
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

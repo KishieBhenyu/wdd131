@@ -1,43 +1,89 @@
-body{
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
 
-    font-family: 'Roboto', sans-serif;
-    background-color: antiquewhite;
+header {
+  background: #004a7c;
+  color: antiquewhite;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
-header{
-    background: #004a7c;
-    color:antiquewhite;
-    padding: 10px;
-    display: flex;
+
+.temple_album {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
-nav a{
-    color: antiquewhite;
-    text-decoration: none;
-    padding: 0.5rem;
-    justify-items: left;
-    position: relative;
-    left: 535%;
-    top: 35%;
+
+#menuBtn {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
-.temple_album{
-    font-size: larger;
-    font-weight: bolder;
+
+nav {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
 }
-h1{
-    text-align: center;
+
+nav.show {
+  display: flex;
 }
-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-   justify-items: auto;
-  gap: 40px;
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
-section img{
-    max-width: 530px;
-    
+
+nav a:hover {
+  background-color: white;
+  color: #004a7c;
+  padding: 0.3rem;
+  border-radius: 5px;
 }
-figcaption{
-    text-align: center;
+
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
 }
+
+h1 {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem 0;
+  justify-items: center;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
 footer {
   text-align: center;
   background: #004a7c;
@@ -45,3 +91,4 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+

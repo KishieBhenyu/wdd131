@@ -1,74 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="temples-large.css">
-    <link rel="stylesheet" href="temples.css">
-    <meta name="description" content="WDD 131 Dynamic Web Fundamentals Kishie Bhenyu">
-  <meta name="author" content="Kishie Bhenyu">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
- <script src="temples.js" defer></script>
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD 131 Temple Album by Kishie Bhenyu" />
+  <meta name="author" content="Kishie Bhenyu" />
+  <title>Temple Album | Kishie Bhenyu</title>
+
+  <link rel="stylesheet" href="temples.css" />
+  <link rel="stylesheet" href="temples-large.css" >
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <script src="temples.js" defer></script>
 </head>
 <body>
-    <header>
-<p class="temple_album">Temple Album</p>
-<nav class="handles">
-    <a href="home">Home</a>
-    <a href="old">Old</a>
-    <a href="new">New</a>
-    <a href="large">Large</a>
-    <a href="small">Small</a>
-</nav>
-    </header>
-    <main>
-<h1>Home</h1>
-<section>
-    <figure>
-        <img src="images/temple.jpg" alt="1">
-        <figcaption>San Diego Califonia</figcaption>
-    </figure>
-     <figure>
-        <img src="images/temple.jpg" alt="2">
-        <figcaption>San Diego Califonia</figcaption>
-    </figure>
-     <figure>
-        <img src="images/temple.jpg" alt="3">
-        <figcaption>San Diego Califonia</figcaption>
-    </figure>
-     <figure>
-        <img src="images/temple.jpg" alt="4">
-        <figcaption>San Diego Califonia</figcaption>
-    </figure>
-     <figure>
-        <img src="images/temple.jpg" alt="5">
-        <figcaption>San Diego Califonia</figcaption>
-    </figure>
-     <figure>
-        <img src="images/temple.jpg" alt="6">
-        <figcaption>San Diego Califonia</figcaption>
-    </figure>
-     <figure>
-        <img src="images/temple.jpg" alt="7">
-        <figcaption>San Diego Califonia</figcaption>
-    </figure>
-     <figure>
-        <img src="images/temple.jpg" alt="8">
-        <figcaption>San Diego Califonia</figcaption>
-    </figure>
-     <figure>
-        <img src="images/temple.jpg" alt="9">
-        <figcaption>San Diego Califonia</figcaption>
-    </figure>
-</section>
+  <header>
+    <p class="temple_album">Temple Album</p>
+    <button id="menuBtn" aria-label="Toggle Navigation Menu">☰</button>
+    <nav id="primaryNav" class="handles">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
 
-    </main>
-    <footer>
- <p>&copy; <span id="currentyear"></span> | Kishie Bhenyu | Zimbabwe</p>
+  <main>
+    <h1>Home </h1>
+    <section>
+      <figure><img src="images/temple.jpg" alt="Temple 1"><figcaption>San Diego California Temple</figcaption></figure>
+      <figure><img src="images/temple.jpg" alt="Temple 2"><figcaption>Salt Lake City Temple</figcaption></figure>
+      <figure><img src="images/temple.jpg" alt="Temple 3"><figcaption>Provo City Center Temple</figcaption></figure>
+      <figure><img src="images/temple.jpg" alt="Temple 4"><figcaption>Rome Italy Temple</figcaption></figure>
+      <figure><img src="images/temple.jpg" alt="Temple 5"><figcaption>Paris France Temple</figcaption></figure>
+      <figure><img src="images/temple.jpg" alt="Temple 6"><figcaption>Tokyo Japan Temple</figcaption></figure>
+      <figure><img src="images/temple.jpg" alt="Temple 7"><figcaption>Accra Ghana Temple</figcaption></figure>
+      <figure><img src="images/temple.jpg" alt="Temple 8"><figcaption>Johannesburg Temple</figcaption></figure>
+      <figure><img src="images/temple.jpg" alt="Temple 9"><figcaption>Manila Philippines Temple</figcaption></figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Kishie Bhenyu | Zimbabwe</p>
     <p id="lastModified"></p>
-    </footer>
+  </footer>
 </body>
 </html>

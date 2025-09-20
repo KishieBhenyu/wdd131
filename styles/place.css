@@ -77,12 +77,13 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
   display: block;
+
 }
 
 /* Responsive layout */
 @media (min-width: 768px) {
   .data{
-    position: RELATIVE;
+    position:relative;
     bottom: 500px;
     padding: 2%;
     display: inline-block;
@@ -96,8 +97,8 @@ footer {
   }
    .weather{
     position: relative;
-    bottom: 895px;
-    left: 900px;
+    bottom: 800px;
+    left: 350px;
     padding: 2%;
     display: inline-block;
     max-width: 50%;
@@ -108,15 +109,16 @@ footer {
     background-color: aliceblue;
     opacity: 0.7;
   }
-  footer{
-    position: relative;
-    bottom: 800px;
-  }
+ 
   h2{
     background-color: indigo;
     color: aliceblue;
     padding-left: 30px;
     position: relative;
     right: 7%;
+  }
+  footer{
+    position: relative;
+  bottom: 680px;
   }
 }

@@ -1,0 +1,122 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+h1{
+    position: relative;
+    text-align: center;
+    background-color: indigo;
+    width:110.5%;
+    right: 5%;
+    padding: 2%;
+    top: 24px;
+}
+main{
+justify-content: space-between;
+}
+
+.smoke{
+     position: relative;
+    text-align: center;
+    background-color: rgb(121, 76, 153);
+    width:110.5%;
+    right: 5%;
+    padding: 1%;
+  top: 24px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+.overview {
+  margin-bottom: 2rem;
+}
+
+.weather{ 
+ text-align: center;
+ padding-top: 40PX;
+}
+
+.data{ 
+ text-align: center;
+ padding-top: 10PX;
+}
+
+.weather-icon {
+  max-width: 80px;
+  margin-top: 1rem;
+}
+
+
+footer {
+  background-color: indigo;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  display: block;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  .data{
+    position: RELATIVE;
+    bottom: 500px;
+    padding: 2%;
+    display: inline-block;
+    max-width: 50%;
+    height: auto;
+    vertical-align: top;
+    text-align: left;
+    margin: 2%;
+    background-color: aliceblue;
+    opacity: 0.7;
+  }
+   .weather{
+    position: relative;
+    bottom: 895px;
+    left: 900px;
+    padding: 2%;
+    display: inline-block;
+    max-width: 50%;
+    height: auto;
+    vertical-align: top;
+    text-align: left;
+    margin: 2%;
+    background-color: aliceblue;
+    opacity: 0.7;
+  }
+  footer{
+    position: relative;
+    bottom: 800px;
+  }
+  h2{
+    background-color: indigo;
+    color: aliceblue;
+    padding-left: 30px;
+    position: relative;
+    right: 7%;
+  }
+}

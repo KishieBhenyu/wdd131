@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victoria Falls - Zambezi</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
 </head>
 <body>
-    <header>
-<h1>ZIMBABWE</h1>
-    </header>
-    <main>
+  <header>
+    <h1>Victoria Falls</h1>
+    <p class="smoke">The Smoke that Thunders </p>
+  </header>
 
-    </main>
-    <footer>
+  <!-- Hero Image with responsive srcset -->
+  
 
-    </footer>
+  <!-- Overview Section -->
+  <main>
+
+<section class="hero">
+    <picture>
+      <source srcset="images/zambezi_large.webp" media="(min-width: 768px)">
+      <img src="images/zambezi_mobile.webp" alt="Victoria Falls on the Zambezi River">
+    </picture>
+  </section>
+
+<section>
+   <section class="data">
+      <h2>Data</h2>
+      <p class="area"><b>Area: </b><span id="area">15000</span> sq km</p>
+      <p class="temp"><b>Population: </b><span id="population">20000</span> </p>
+      <p class="wind"><b>Attraction:</b><span id="attraction"> Zambezi river</span> </p>
+      <p class="chill"><b>Languages: </b><span id="language">Shona and Ndebele</span></p>
+      <p class="temp"><b>Currency: </b><span id="currency">USD</span> </p>
+      <p class="wind"><b>Time Zone: </b><span id="timezne">CAT</span></p>
+      <p class="chill"><b>Calling Code:</b> <span id="code">+263</span></p>
+      <p class="chill"><b>Internet TLD: </b><span id="internet">.zw</span></p>
+    </section>
+</section>
+
+    <!-- Weather Section -->
+    <section class="weather">
+      <h2>Weather </h2>
+      <img src="images/sun_cloud_mobile.svg" alt="Weather icon" class="weather-icon">
+      <p class="temp"><b>Temperature: </b><span id="temp">20</span> °C</p>
+      <p class="temp"><b>Condition: </b><span id="temp">Sunny</span> </p>
+      <p class="wind"><b>Wind Speed: </b><span id="wind">10</span> km/h</p>
+      <p class="chill"><b>Wind Chill: </b><span id="windchill"></span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Zambezi Adventures</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
 </body>
 </html>

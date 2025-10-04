@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #1A1A1A;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header img{
+    max-width: 100px;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+.color-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.color-swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.primary {
+  background-color: #1A1A1A;
+}
+
+.accent {
+  background-color: #C19A6B;
+}
+
+.wireframes {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+}
+
+.wireframes img {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  max-height: 300px;
+}
+
+footer {
+  background-color: #1A1A1A;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

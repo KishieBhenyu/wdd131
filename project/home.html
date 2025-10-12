@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Gentlemen's Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/home.css">
+  <script defer src="scripts/home.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="branding">
+      <img src="images/logo.png" alt="Gentlemen's Hub Logo" id="logo">
+      <h1>The Gentlemen's Hub</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    <section class="hero">
+      <h2>Elegance • Confidence • Professionalism</h2>
+      <p>Discover timeless style and premium craftsmanship in every suit.</p>
+      <a href="products.html" class="btn">Shop Now</a>
+    </section>
+
+   
+    <section class="products-section">
+      <h2>Featured Collection</h2>
+
+      <div class="product-grid">
+        <div class="card" id="suit01">
+          <img src="images/single.jpg" alt="Classic Single-Breasted Suit">
+          <h3>Classic Single-Breasted Suit</h3>
+          <p>Fit: Regular • Lapel: Notch</p>
+          <p class="price">US$ 249.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="card" id="suit02">
+          <img src="images/morden.jpg" alt="Modern Slim Fit Suit">
+          <h3>Modern Slim Fit Suit</h3>
+          <p>Fit: Slim • Lapel: Peak</p>
+          <p class="price">US$ 299.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="card" id="suit03">
+          <img src="images/double.jpg" alt="Double-Breasted Formal Suit">
+          <h3>Double-Breasted Formal Suit</h3>
+          <p>Fit: Modern • Lapel: Peak</p>
+          <p class="price">US$ 349.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="newsletter">
+      <h2>Join Our Style Circle</h2>
+      <form id="newsletter-form">
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="newsletter-msg" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Gentlemen's Hub | <a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>

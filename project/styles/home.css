@@ -1,0 +1,231 @@
+:root {
+  --primary: #1A1A1A;
+  --accent: #C19A6B;
+  --light: #f9f9f9;
+  --radius: 10px;
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  color: var(--primary);
+  line-height: 1.6;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  background-color: var(--primary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#logo {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--light);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+  color: var(--light);
+}
+
+nav a.active,
+nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  text-align: center;
+  background: linear-gradient(180deg, #fff, var(--light));
+  padding: 4rem 1rem;
+}
+
+.hero h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.btn {
+  background: var(--accent);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #a77d4f;
+}
+
+.products-section {
+  max-width: var(--max-width);
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.products-section h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1.5rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0.5rem 0 0;
+}
+
+.card p {
+  margin: 0.25rem 0;
+}
+
+.price {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.add-to-cart {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+  background: #a77d4f;
+}
+
+.newsletter {
+  background: var(--light);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.newsletter input {
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.newsletter button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background: #a77d4f;
+}
+
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+}
